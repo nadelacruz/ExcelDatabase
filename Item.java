@@ -25,8 +25,8 @@ public class Item {
         this.isAnswered = false;
     }
 
-    public void setIsAnswered(boolean bool) {
-        this.isAnswered = bool;
+    public void changeIsAnsweredToTrue() {
+        this.isAnswered = true;
     }
 
     public String getTopic() {
