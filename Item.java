@@ -12,7 +12,7 @@ public class Item {
     private boolean isAnswered;
     
     public Item(String topic, String question, String choiceOne, String choiceTwo, String choiceThree,
-                String choiceFour, String correctChoice, String imageFilename, String difficulty, boolean isAnswered) {
+                String choiceFour, String correctChoice, String imageFilename, String difficulty) {
         this.topic = topic;
         this.question = question;
         this.choiceOne = choiceOne;
