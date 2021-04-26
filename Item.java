@@ -65,7 +65,7 @@ public class Item {
         return difficulty;
     }
 
-    public boolean isAnswered() {
+    public boolean getIsAnswered() {
         return isAnswered;
     }
 }
