@@ -6,7 +6,7 @@ public class IndexFetcher {
     public static ArrayList<Integer> fetch(ArrayList<Item> database, String topic, String difficulty) {
         ArrayList<Integer> temp = new ArrayList<>();
         for (int i = 0; i < database.size(); i++) {
-            if (database.get(i).getTopic().equals(topic) && database.get(i).getDifficulty().equals(difficulty)) {
+            if (database.get(i).getTopic().equals(topic) && database.get(i).getDifficulty().equals(difficulty) && !database.get(i).getIsAnswered()) {
                 temp.add(i);
             }
         }
@@ -17,7 +17,7 @@ public class IndexFetcher {
     public static ArrayList<Integer> fetch(ArrayList<Item> database, String difficulty) {
         ArrayList<Integer> temp = new ArrayList<>();
         for (int i = 0; i < database.size(); i++) {
-            if (database.get(i).getDifficulty().equals(difficulty)) {
+            if (database.get(i).getDifficulty().equals(difficulty) && !database.get(i).getIsAnswered()) {
                 temp.add(i);
             }
         }
